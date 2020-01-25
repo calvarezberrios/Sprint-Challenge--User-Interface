@@ -98,6 +98,17 @@ header nav a:hover {
     font-weight: bolder;
 }
 
+header #logo_link:hover {
+    animation-name: blink;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    from {filter: invert(0);}
+    to {filter: invert(1);}
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -201,4 +212,54 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 415px) {
+    .container {
+        width: 400px;
+    }
+
+    header #logo_link img {
+        width: 80%;
+    }
+    header nav a {
+        font-size: 12px;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    .middle-content .boxes .box {
+        height: 50px
+    }
+
+    footer nav a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 310px;
+    }
+
+    header #logo_link img {
+        width: 70%;
+    }
+    header nav a {
+        font-size: 10px;
+    }
+    p {
+        font-size: 10px;
+    }
+
+    .middle-content .boxes .box {
+        text-align: center;
+    }
+
+    footer nav a {
+        font-size: 10px;
+    }
 }
