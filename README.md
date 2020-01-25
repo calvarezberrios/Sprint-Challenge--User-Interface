@@ -34,13 +34,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+    Semantic HTML is a way of giving meaning to each section of the document. It helps screen readers and 
+    google searches to know what is on the page and get an idea what is section holds. 
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+    - block puts the elements on new lines, inline keeps them next to each other on the same line
+    - block has width and height properties, inline does not
 
 3. What are the 4 areas of the box model?
 
+    1. Margin
+    2. Border
+    3. Padding
+    4. Content
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+    It aligns the items on the cross-axis, or y-axis... Vertically!
+
 5. Explain why git is valuable to a team of developers.
+
+    When working with a team of developers, each member works on their branch of the git and uploads the edits for review
+    by the project manager who then merges it with the main files for the final results with everyone's work in one.
+    
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -55,8 +72,8 @@ You are expected to be able to answer all these questions. Your responses contri
  
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [x] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
  
 
@@ -70,7 +87,7 @@ Your finished project must include all of the following requirements:
 [Review the provided design file for the home page](design-files/home.png).  Notice the navigation and header images are missing.
 
 * [x] Build the HTML and CSS to create the missing navigation and header.
-* [ ] Link the `About` navigation item to the [about.html](about.html) page
+* [x] Link the `About` navigation item to the [about.html](about.html) page
 
 You will also notice there are 10 boxes on the home page that need background colors.  Use this list below to correctly style each box:
 
