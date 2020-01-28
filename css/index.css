@@ -69,6 +69,43 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    padding: 18px 0;
+    display: flex;
+}
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+header nav a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+header #logo_link:hover {
+    animation-name: blink;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    from {filter: invert(0);}
+    to {filter: invert(1);}
 }
 
 .top-content {
@@ -77,12 +114,17 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding: 22px 0;
+}
+
+.top-content .hero_img {
+	width: 100%;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-top: 20px;  
 }
 
 .middle-content {
@@ -104,12 +146,42 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box.teal {
+    background: teal;
+}
+.box.gold {
+    background: gold;
+}
+.box.cadetblue {
+    background: cadetblue;
+}
+.box.coral {
+    background: coral;
+}
+.box.crimson {
+    background: crimson;
+}
+.box.forestgreen {
+    background: forestgreen;
+}
+.box.darkorchid {
+    background: darkorchid;
+}
+.box.hotpink {
+    background: hotpink;
+}
+.box.indigo {
+    background: indigo;
+}
+.box.dodgerblue {
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +215,54 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 415px) {
+    .container {
+        width: 400px;
+    }
+
+    header #logo_link img {
+        width: 80%;
+    }
+    header nav a {
+        font-size: 12px;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    .middle-content .boxes .box {
+        height: 50px
+    }
+
+    footer nav a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 310px;
+    }
+
+    header #logo_link img {
+        width: 70%;
+    }
+    header nav a {
+        font-size: 10px;
+    }
+    p {
+        font-size: 10px;
+    }
+
+    .middle-content .boxes .box {
+        text-align: center;
+    }
+
+    footer nav a {
+        font-size: 10px;
+    }
 }
